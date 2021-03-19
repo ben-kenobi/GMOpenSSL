@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'GMOpenSSL_bc'
-  s.version          = '2.2.4'
+  s.version          = '2.2.5'
   s.summary          = '编译 OpenSSL 为 framework，版本对应 OpenSSL 1.1.1i。'
 
   s.description      = <<-DESC
@@ -21,8 +21,8 @@ Pod::Spec.new do |s|
   s.source           = { :git => 'https://ben-kenobi@github.com/ben-kenobi/GMOpenSSL.git', :tag => s.version.to_s }
   s.ios.deployment_target = '8.0'
   s.preserve_paths = 'GMOpenSSL/openssl.framework'
-  s.source_files = 'GMOpenSSL/openssl.framework/Headers/**/*{.h}'
-  s.public_header_files = 'GMOpenSSL/openssl.framework/Headers/*.{h}'
+  s.source_files = 'GMOpenSSL/openssl.framework/Headers/**/*{.h}','GMOpenSSL/*.{h,c}'
+  s.public_header_files = 'GMOpenSSL/openssl.framework/Headers/*.{h}','GMOpenSSL/*.{h}'
   s.frameworks = 'Foundation'
   s.vendored_frameworks = 'GMOpenSSL/openssl.framework'
   s.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
