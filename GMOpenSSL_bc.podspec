@@ -25,7 +25,7 @@ Pod::Spec.new do |s|
   s.public_header_files = 'GMOpenSSL/openssl.framework/Headers/*.{h}','GMOpenSSL/*.{h}'
   s.frameworks = 'Foundation'
   s.vendored_frameworks = 'GMOpenSSL/openssl.framework'
-  s.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
-  s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
+  # s.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
+  # s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
 
 end
