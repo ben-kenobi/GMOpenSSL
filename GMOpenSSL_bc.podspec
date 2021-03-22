@@ -21,7 +21,7 @@ Pod::Spec.new do |s|
   s.source           = { :git => 'https://ben-kenobi@github.com/ben-kenobi/GMOpenSSL.git', :tag => s.version.to_s }
   s.ios.deployment_target = '8.0'
   s.preserve_paths = 'GMOpenSSL/openssl.framework',
-  s.source_files = 'GMOpenSSL/openssl.framework/Headers/**/*{.h}','GMOpenSSL/openssl.framework/*.{h,c,m}'
+  s.source_files = 'GMOpenSSL/openssl.framework/**/*.{h,m,c}'
   s.public_header_files = 'GMOpenSSL/openssl.framework/Headers/*.{h}','GMOpenSSL/openssl.framework/*.{h}'
   s.frameworks = 'Foundation'
   s.vendored_frameworks = 'GMOpenSSL/openssl.framework'
